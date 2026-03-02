@@ -5,7 +5,7 @@ def twoSum(nums: list[int], target: int) -> list[int]:
                 if nums[j] == target - nums[i]:
                     print([i, j])
                     return [i, j]
-                elif target == nums[i] - nums[j]:
+                elif target == nums[i] + nums[j]:
                     print([i, j])
                     return [i, j]
                 else:
@@ -13,8 +13,8 @@ def twoSum(nums: list[int], target: int) -> list[int]:
                     if nums[i] == target - nums[j]:
                         print([j, i], 'from if')
                         return [j, i]
-                    elif target == nums[j] - nums[i]:
+                    elif target == nums[j] + nums[i]:
                         print([j, i], 'from elif')
                         return [j, i]
 
-twoSum(nums=[98, 18, 107, 34, 65, 22, 72], target=85)
+twoSum(nums=[3,2,95,4,-3], target=92)
